@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+#game {
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+}
+
+#game div.card {
+  border: 1px solid black;
+  width: calc(20% - 20px); /* Adjust based on the number of cards per row and the desired margin */
+  height: 200px;
+  margin: 10px;
+  display: inline-block;
+  background-color: #ddd;
+  position: relative; /* Needed for absolutely positioning elements inside */
+  cursor: pointer;
+}
+
+/* Adjusted for visibility, can use font-size: 0; when hiding the content */
+.flipped, .card.matched {
+  font-size: 16px;
+  cursor: default;
+}
+
+/* Add styling for buttons and score display for a cleaner look */
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+div#score, div#bestScore {
+  margin: 10px;
+  font-size: 20px;
+}
